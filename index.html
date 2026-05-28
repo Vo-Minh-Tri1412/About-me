@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hyo | Home</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f7f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --accent: #2563eb;
+      --border: #e5e7eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+    }
+    header {
+      padding: 48px 20px 24px;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 8px; font-size: 2rem; }
+    header p { margin: 0; color: var(--muted); }
+    main {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 24px 20px 64px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 6px 16px rgba(15, 23, 42, 0.06);
+    }
+    .cta {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 10px 16px;
+      background: var(--accent);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+    ul { margin: 12px 0 0 18px; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Hyo's GitHub Pages</h1>
+    <p>University of Science - VNUHCM</p>
+  </header>
+  <main>
+    <section class="card">
+      <h2>About this site</h2>
+      <p>
+        This site was created for Assignment 2. It hosts a dedicated resume page
+        and will be updated over time with projects, activities, and achievements.
+      </p>
+      <a class="cta" href="resume.html">View Resume</a>
+    </section>
+    <section class="card" style="margin-top: 20px;">
+      <h2>Highlights</h2>
+      <ul>
+        <li>Learning OOP, data structures, and software development practices.</li>
+        <li>Building small C++ projects and improving problem-solving skills.</li>
+        <li>Exploring web technologies through GitHub Pages.</li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

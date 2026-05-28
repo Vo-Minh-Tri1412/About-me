@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hyo | Resume</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #f8fafc;
+      --muted: #cbd5f5;
+      --accent: #38bdf8;
+      --chip: #1f2937;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #1e293b);
+      color: var(--text);
+    }
+    header {
+      padding: 40px 20px 16px;
+      text-align: center;
+    }
+    header h1 { margin: 0 0 8px; font-size: 2.2rem; }
+    header p { margin: 0; color: var(--muted); }
+    main {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 24px 20px 64px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+    @media (min-width: 900px) {
+      .grid { grid-template-columns: 2fr 1fr; }
+    }
+    .card {
+      background: rgba(17, 24, 39, 0.9);
+      border-radius: 16px;
+      padding: 22px 24px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+    h2 { margin-top: 0; }
+    .section-title {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-size: 0.9rem;
+      margin-bottom: 10px;
+    }
+    .chip {
+      display: inline-block;
+      padding: 6px 10px;
+      margin: 6px 6px 0 0;
+      background: var(--chip);
+      border-radius: 999px;
+      font-size: 0.85rem;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    .entry { margin-bottom: 14px; }
+    .entry p { margin: 4px 0 0; color: var(--muted); }
+    footer { text-align: center; padding: 10px 20px 30px; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Vo Minh Tri (Hyo)</h1>
+    <p>University of Science - VNUHCM</p>
+    <p>
+      <a href="index.html">Back to Home</a>
+      &nbsp;•&nbsp;
+      <a href="https://github.com/Vo-Minh-Tri1412" target="_blank" rel="noreferrer">GitHub Profile</a>
+    </p>
+  </header>
+  <main class="grid">
+    <section class="card">
+      <h2 class="section-title">Summary</h2>
+      <p>
+        Undergraduate student focusing on object-oriented programming, C++, and
+        software fundamentals. Motivated to build clean, maintainable code and
+        grow through hands-on projects.
+      </p>
+
+      <h2 class="section-title">Education</h2>
+      <div class="entry">
+        <strong>University of Science - VNUHCM</strong>
+        <p>Undergraduate Student • 2024 - Present</p>
+      </div>
+
+      <h2 class="section-title">Projects</h2>
+      <div class="entry">
+        <strong>Library Management System (C++)</strong>
+        <p>Built core features for book and reader management, borrowing/return flows, and statistics.</p>
+      </div>
+      <div class="entry">
+        <strong>GitHub Pages Resume</strong>
+        <p>Designed a personal site with a dedicated resume page using HTML and CSS.</p>
+      </div>
+
+      <h2 class="section-title">Activities</h2>
+      <div class="entry">
+        <strong>OOP and Data Structures Practice</strong>
+        <p>Solving exercises and refining problem-solving skills in C++.</p>
+      </div>
+    </section>
+
+    <aside class="card">
+      <h2 class="section-title">Skills</h2>
+      <div>
+        <span class="chip">C++</span>
+        <span class="chip">OOP</span>
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">Git/GitHub</span>
+      </div>
+
+      <h2 class="section-title" style="margin-top: 18px;">Contact</h2>
+      <p>Email: <em>add-your-email@example.com</em></p>
+      <p>Location: Ho Chi Minh City, Vietnam</p>
+
+      <h2 class="section-title" style="margin-top: 18px;">Goals</h2>
+      <p>Build impactful software, contribute to open-source, and expand full-stack skills.</p>
+    </aside>
+  </main>
+  <footer>Last updated: May 29, 2026</footer>
+</body>
+</html>
