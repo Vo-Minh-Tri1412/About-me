@@ -1,15 +1,23 @@
 # Võ Minh Trí (Hyo) - Portfolio Website
 
-Đây là trang web cá nhân (Portfolio) của tôi, được xây dựng lại với cấu trúc chuyên nghiệp, hiện đại và chuẩn responsive.
+Đây là portfolio cá nhân của Võ Minh Trí (Hyo), tập trung vào Machine Learning, mô phỏng và các hệ thống AI có thể kiểm thử.
 
 ## 🚀 Tính năng nổi bật (Features)
 - **Giao diện hiện đại:** Thiết kế sạch, phẳng với gam màu nhẹ nhàng.
 - **Responsive:** Tương thích với hầu hết các thiết bị (Desktop, Tablet, Mobile).
+- **Dự án nổi bật:** Liên kết trực tiếp tới bốn repository đang ghim trên GitHub.
 - **Cấu trúc rõ ràng:**
   - `index.html`: Trang chính duy nhất (Single Page Application - SPA style).
   - `assets/css/style.css`: Nơi chứa toàn bộ style cho trang web.
   - `assets/js/main.js`: Chứa các script xử lý sự kiện (menu hoạt ảnh, cuộn trang...).
   - `assets/img/`: Nơi chứa hình ảnh (tương lai sẽ cập nhật thêm).
+
+## ⭐ Dự án đang ghim
+
+- [Gravity Barnes–Hut Simulation](https://github.com/Vo-Minh-Tri1412/gravity-barnes-hut-simulation): mô phỏng N-body bằng Barnes–Hut và Octree.
+- [Canteen Checkout System](https://github.com/Vo-Minh-Tri1412/canteen-checkout-system): hệ thống nhận diện món ăn và checkout cho canteen.
+- [Smart Traffic Finance Optimizer](https://github.com/Vo-Minh-Tri1412/smart-traffic-finance-optimizer): mô phỏng giao thông và tối ưu đầu tư công.
+- [Werewolf Agent Sandbox](https://github.com/Vo-Minh-Tri1412/werewolf-agent-sandbox): sandbox cho game suy luận xã hội nhiều agent.
 
 ## 📁 Cấu trúc thư mục (Folder Structure)
 ```
