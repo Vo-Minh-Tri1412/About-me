@@ -1,45 +1,43 @@
-# Võ Minh Trí (Hyo) - Portfolio Website
+# Võ Minh Trí (Hyo) — Portfolio
 
-Đây là portfolio cá nhân của Võ Minh Trí (Hyo), tập trung vào Machine Learning, mô phỏng và các hệ thống AI có thể kiểm thử.
+Personal portfolio for [Võ Minh Trí](https://github.com/Vo-Minh-Tri1412), a second-year Computer Science student at the University of Science, VNU-HCM (HCMUS).
 
-## 🚀 Tính năng nổi bật (Features)
-- **Giao diện hiện đại:** Thiết kế sạch, phẳng với gam màu nhẹ nhàng.
-- **Responsive:** Tương thích với hầu hết các thiết bị (Desktop, Tablet, Mobile).
-- **Dự án nổi bật:** Liên kết trực tiếp tới bốn repository đang ghim trên GitHub.
-- **Cấu trúc rõ ràng:**
-  - `index.html`: Trang chính duy nhất (Single Page Application - SPA style).
-  - `assets/css/style.css`: Nơi chứa toàn bộ style cho trang web.
-  - `assets/js/main.js`: Chứa các script xử lý sự kiện (menu hoạt ảnh, cuộn trang...).
-  - `assets/img/`: Nơi chứa hình ảnh (tương lai sẽ cập nhật thêm).
+A static, responsive site showcasing selected technical work in computer vision, AI agents, simulation and software engineering.
 
-## ⭐ Dự án đang ghim
+## Features
 
-- [Gravity Barnes–Hut Simulation](https://github.com/Vo-Minh-Tri1412/gravity-barnes-hut-simulation): mô phỏng N-body bằng Barnes–Hut và Octree.
-- [Canteen Checkout System](https://github.com/Vo-Minh-Tri1412/canteen-checkout-system): hệ thống nhận diện món ăn và checkout cho canteen.
-- [Smart Traffic Finance Optimizer](https://github.com/Vo-Minh-Tri1412/smart-traffic-finance-optimizer): mô phỏng giao thông và tối ưu đầu tư công.
-- [Werewolf Agent Sandbox](https://github.com/Vo-Minh-Tri1412/werewolf-agent-sandbox): sandbox cho game suy luận xã hội nhiều agent.
+- Accessible navigation, keyboard focus states and reduced-motion support
+- Responsive design for mobile and desktop
+- No backend or non-functional contact form: contact links open an email client
+- Plain HTML, CSS and JavaScript; no build step
+- Project descriptions distinguish prototypes and in-progress work from completed features
 
-## 📁 Cấu trúc thư mục (Folder Structure)
-```
-/
-├── index.html        # Trang Portfolio chính
-├── README.md         # Tài liệu mô tả (bạn đang đọc)
-└── assets/
-    ├── css/
-    │   └── style.css # Style CSS chính
-    ├── js/
-    │   └── main.js   # Script JavaScript tương tác
-    └── img/          # Thư mục lưu trữ hình ảnh
+## Projects
+
+- [Canteen Checkout System](https://github.com/Vo-Minh-Tri1412/canteen-checkout-system) — local-first computer vision checkout prototype.
+- [Werewolf Agent Sandbox](https://github.com/Vo-Minh-Tri1412/werewolf-agent-sandbox) — multi-agent social deduction platform, with a limited V2 canary.
+- [Smart Traffic Finance Optimizer](https://github.com/Vo-Minh-Tri1412/smart-traffic-finance-optimizer) — SUMO traffic simulation and constrained investment optimization scaffold.
+- [Gravity Barnes–Hut Simulation](https://github.com/Vo-Minh-Tri1412/gravity-barnes-hut-simulation) — team N-body simulation project in C++20.
+
+## Preview locally
+
+Open `index.html` in a browser, or use a local HTTP server:
+
+```bash
+python -m http.server 8000
 ```
 
-## 🛠 Công nghệ sử dụng (Built With)
-- **HTML5** & **CSS3** (Sử dụng Flexbox & Grid system)
-- **JavaScript** (Vanilla JS cho thao tác DOM, sự kiện scroll)
-- **Font Awesome 6** (Sử dụng cho hệ thống icons)
-- **Google Fonts** (Font Inter)
+Then visit http://localhost:8000.
 
-## 📌 Cách sử dụng (How to Use)
-1. Clone hoặc tải mã nguồn về máy.
-2. Mở file `index.html` bằng bất kỳ trình duyệt web nào (Chrome, Edge, Firefox...).
-3. Chỉnh sửa thông tin cá nhân của bạn trong file `index.html`.
-4. Nếu muốn tùy chỉnh màu sắc, font chữ, bạn có thể chỉnh sửa các biến CSS tại đầu file `assets/css/style.css`.
+## Publish
+
+Use **Settings → Pages → Build and deployment → Deploy from a branch**, then choose `main` and the repository root after reviewing and merging the changes. The expected URL, once GitHub Pages is enabled, is `https://vo-minh-tri1412.github.io/About-me/`.
+
+## Edit content
+
+- `index.html` — profile, project descriptions and outbound links
+- `assets/css/style.css` — layout, colors and breakpoints
+- `assets/js/main.js` — accessible mobile menu and year display
+- `assets/favicon.svg` — simple site icon
+
+Information is based on the owner's CV and repository documentation. Project results and responsibilities should be updated as evidence becomes available.
