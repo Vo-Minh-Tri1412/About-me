@@ -1,237 +1,158 @@
-<!DOCTYPE html>
-<html lang="vi">
+<!doctype html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Võ Minh Trí (Hyo) - Portfolio CV</title>
-    <!-- Google Fonts: Inter -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1020">
+  <meta name="description" content="Võ Minh Trí (Hyo) — Computer Science student at HCMUS building practical computer vision, AI agent, simulation and software engineering projects.">
+  <meta property="og:title" content="Võ Minh Trí — Computer Science & AI Portfolio">
+  <meta property="og:description" content="Selected work in computer vision, AI agents, simulation and software engineering.">
+  <meta property="og:type" content="website">
+  <title>Võ Minh Trí (Hyo) — Computer Science & AI Portfolio</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body>
-
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">Hyo<span>.</span></a>
-            <ul class="nav-menu">
-                <li><a href="#about">Thông tin</a></li>
-                <li><a href="#skills">Kỹ năng</a></li>
-                <li><a href="#projects">Dự án</a></li>
-                <li><a href="#contact">Liên hệ</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Võ Minh Trí, home"><span class="brand-symbol" aria-hidden="true">&lt;/&gt;</span> minhtri<span class="brand-dot">.</span></a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-controls="nav-links" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-github" href="https://github.com/Vo-Minh-Tri1412" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
     </nav>
+  </header>
 
-    <!-- Header / Hero Section -->
-    <header id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1>Xin chào, tôi là <br><span>Võ Minh Trí</span></h1>
-                <h3>Người Đam mê Machine Learning & Deep Learning</h3>
-                <p>Tôi đam mê nghiên cứu Machine Learning, Deep Learning và các hệ thống mô phỏng. Định hướng của tôi là trở thành một AI researcher: học chắc nền tảng toán học, hiểu thuật toán từ bên trong và chuyển hóa chúng thành những hệ thống có thể kiểm thử bằng Python và C++.</p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">Xem Dự án</a>
-                    <a href="#contact" class="btn btn-secondary">Liên hệ tôi</a>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com/Vo-Minh-Tri1412" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="#" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" target="_blank" title="Facebook"><i class="fab fa-facebook"></i></a>
-                </div>
-            </div>
-            <div class="hero-img">
-                <div class="img-box">
-                    <i class="fas fa-user-astronaut"></i>
-                </div>
-            </div>
+  <main id="main">
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-main">
+        <div class="eyebrow"><span class="status-dot" aria-hidden="true"></span> OPEN TO REMOTE INTERNSHIPS & COLLABORATION</div>
+        <p class="hero-overline">Hello, I'm Võ Minh Trí <span class="muted">(Hyo)</span> <span aria-hidden="true">✳</span></p>
+        <h1 id="hero-title">I build <span class="gradient-text">practical AI</span> & thoughtful software.</h1>
+        <p class="hero-description">Second-year Computer Science student at <strong>HCMUS</strong>, focused on machine learning, computer vision, AI agents and systems that can be tested, explained and improved.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">Explore my projects <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="mailto:vmtriz234@gmail.com">Get in touch <span aria-hidden="true">→</span></a>
         </div>
-    </header>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">Thông tin <span>Cá nhân</span></h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <h3>Mục tiêu nghề nghiệp</h3>
-                    <p>Mục tiêu lớn nhất của tôi là theo đuổi con đường nghiên cứu chuyên sâu về Trí tuệ Nhân tạo, đặc biệt trong lĩnh vực Machine Learning và Deep Learning. Tôi đang tích cực theo học các giáo trình cơ bản như "Machine Learning cơ bản" của Vũ Hữu Tiệp và "Dive into Deep Learning" (d2l) để xây dựng kiến thức thật vững. Đồng thời, tôi kết hợp mài giũa nền tảng lập trình vững chắc qua bộ đôi ngôn ngữ C++ và Python.</p>
-                    
-                    <div class="info-list">
-                        <ul>
-                            <li><strong>Họ & Tên:</strong> Võ Minh Trí (Hyo)</li>
-                            <li><strong>Học vấn:</strong> Sinh viên</li>
-                            <li><strong>Nơi sinh sống:</strong> TP. Hồ Chí Minh</li>
-                            <li><strong>Sở thích:</strong> Đọc Paper AI, Lập trình mô hình ML/DL, Vật lý</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="timeline">
-                    <h3>Giáo dục & Hoạt động</h3>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <p class="timeline-date">Hiện tại</p>
-                        <h4>Nghiên cứu Machine Learning</h4>
-                        <p>Đang tự học và nắm vững các nền tảng toán học, thuật toán cốt lõi thông qua tài liệu "Machine Learning cơ bản" của tác giả Vũ Hữu Tiệp và "Dive into Deep Learning" (d2l).</p>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <p class="timeline-date">Hoạt động cá nhân</p>
-                        <h4>Tự học & Mài giũa Kỹ năng</h4>
-                        <p>Xây dựng các mô hình phân loại và hồi quy thực tế, củng cố Toán học cho ML, tư duy thuật toán với Python.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="hero-highlights" aria-label="Academic highlights">
+          <div><strong>3.61<span>/4.0</span></strong><small>University GPA</small></div>
+          <div><strong>Top 25</strong><small>AI-Quantum Challenge 2026 · team</small></div>
+          <div><strong>HCMUS</strong><small>Computer Science · Year 2</small></div>
         </div>
+      </div>
+      <div class="hero-visual" aria-label="Development interests">
+        <div class="visual-orbit orbit-one" aria-hidden="true"></div>
+        <div class="visual-orbit orbit-two" aria-hidden="true"></div>
+        <div class="editor-window">
+          <div class="editor-bar"><div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>profile.py</span><span class="editor-icon" aria-hidden="true">◇</span></div>
+          <div class="editor-lines" aria-hidden="true">
+            <p><span class="line-number">01</span><span class="syntax-purple">class</span> <span class="syntax-blue">Engineer</span>:</p>
+            <p><span class="line-number">02</span>&nbsp; name = <span class="syntax-green">"Vo Minh Tri"</span></p>
+            <p><span class="line-number">03</span>&nbsp; focus = [</p>
+            <p><span class="line-number">04</span>&nbsp;&nbsp; <span class="syntax-green">"Computer Vision"</span>,</p>
+            <p><span class="line-number">05</span>&nbsp;&nbsp; <span class="syntax-green">"AI Agents"</span>,</p>
+            <p><span class="line-number">06</span>&nbsp;&nbsp; <span class="syntax-green">"Optimization"</span></p>
+            <p><span class="line-number">07</span>&nbsp; ]</p>
+            <p><span class="line-number">08</span>&nbsp; approach = <span class="syntax-green">"build & verify"</span></p>
+          </div>
+          <div class="editor-bottom"><span><span class="live-dot" aria-hidden="true"></span> Learning by building</span><span>Python · C++20</span></div>
+        </div>
+        <div class="floating-label floating-label-one">ML / CV</div>
+        <div class="floating-label floating-label-two">systems + research</div>
+      </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Lĩnh vực & <span>Kỹ năng</span></h2>
-            <div class="skills-grid">
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Ngôn ngữ Lập trình</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Python</span>
-                        <span class="tag">C++</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-cogs"></i> Chuyên môn cốt lõi</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Machine Learning</span>
-                        <span class="tag">Deep Learning</span>
-                        <span class="tag">Computer Vision</span>
-                        <span class="tag">Toán cho ML (Đại số tuyến tính & Thống kê)</span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3><i class="fas fa-tools"></i> Công cụ & Môi trường</h3>
-                    <div class="skill-tags">
-                        <span class="tag">Jupyter Notebook</span>
-                        <span class="tag">Git / GitHub</span>
-                        <span class="tag">Anaconda</span>
-                        <span class="tag">VS Code</span>
-                    </div>
-                </div>
-            </div>
+    <section class="section work-section" id="work" aria-labelledby="work-title">
+      <div class="container">
+        <div class="section-top">
+          <div><p class="section-kicker">01 / SELECTED WORK</p><h2 id="work-title">Projects built to <em>solve problems.</em></h2></div>
+          <a class="text-link" href="https://github.com/Vo-Minh-Tri1412?tab=repositories" target="_blank" rel="noopener noreferrer">All repositories <span aria-hidden="true">↗</span></a>
         </div>
+        <div class="project-grid">
+          <article class="project-card featured">
+            <div class="project-card-top"><span class="project-type">01 · COMPUTER VISION</span><span class="project-status">Prototype</span></div>
+            <div class="project-symbol symbol-vision" aria-hidden="true">◈</div>
+            <h3>Canteen Checkout System</h3>
+            <p>A local-first checkout prototype for <strong>11 Vietnamese dishes</strong>. Combines reviewed datasets, dish classification, YOLO food-region detection and a checkout demo with prices, vouchers, loyalty points and receipts.</p>
+            <div class="chips"><span>Python</span><span>YOLO</span><span>Data curation</span><span>SQLite</span></div>
+            <a class="card-link" href="https://github.com/Vo-Minh-Tri1412/canteen-checkout-system" target="_blank" rel="noopener noreferrer" aria-label="Explore Canteen Checkout System repository">Explore project <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project-card">
+            <div class="project-card-top"><span class="project-type">02 · AI AGENTS</span><span class="project-status">V2 canary</span></div>
+            <div class="project-symbol symbol-agents" aria-hidden="true">⌘</div>
+            <h3>Werewolf Agent Sandbox</h3>
+            <p>A multiplayer social-deduction platform where humans and LLM agents play under a trusted rule engine. Features scoped observations, validated actions, event logs and deterministic replay. V2 is in a limited canary stage.</p>
+            <div class="chips"><span>TypeScript</span><span>LLM orchestration</span><span>React</span><span>Testing</span></div>
+            <a class="card-link" href="https://github.com/Vo-Minh-Tri1412/werewolf-agent-sandbox" target="_blank" rel="noopener noreferrer" aria-label="Explore Werewolf Agent Sandbox repository">Explore project <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project-card">
+            <div class="project-card-top"><span class="project-type">03 · SIMULATION & OPTIMIZATION</span><span class="project-status is-wip">In progress</span></div>
+            <div class="project-symbol symbol-traffic" aria-hidden="true">⌁</div>
+            <h3>Smart Traffic Finance Optimizer</h3>
+            <p>Explores which intersections a city should upgrade with a limited budget. Includes a SUMO simulation backend, preliminary traffic baselines and a SUMO-to-Godot rendering bridge. Trained RL and CV models remain future work.</p>
+            <div class="chips"><span>Python</span><span>SUMO</span><span>Godot</span><span>Optimization</span></div>
+            <a class="card-link" href="https://github.com/Vo-Minh-Tri1412/smart-traffic-finance-optimizer" target="_blank" rel="noopener noreferrer" aria-label="Explore Smart Traffic Finance Optimizer repository">Explore project <span aria-hidden="true">↗</span></a>
+          </article>
+          <article class="project-card">
+            <div class="project-card-top"><span class="project-type">04 · C++ & ALGORITHMS</span><span class="project-status">Team project</span></div>
+            <div class="project-symbol symbol-gravity" aria-hidden="true">✧</div>
+            <h3>Gravity Barnes–Hut Simulation</h3>
+            <p>Co-developed a real-time 3D N-body gravity simulator using Barnes–Hut and Octree spatial subdivision, with a brute-force solver for comparison, interactive visualization and automated tests.</p>
+            <div class="chips"><span>C++20</span><span>Octree</span><span>Raylib</span><span>CMake</span></div>
+            <a class="card-link" href="https://github.com/Vo-Minh-Tri1412/gravity-barnes-hut-simulation" target="_blank" rel="noopener noreferrer" aria-label="Explore Gravity Barnes-Hut Simulation repository">Explore project <span aria-hidden="true">↗</span></a>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Dự án <span>Nổi bật</span></h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-atom"></i></div>
-                    <h3>Gravity Barnes–Hut Simulation</h3>
-                    <p>Mô phỏng N-body thời gian thực bằng C++20, kết hợp Barnes–Hut, Octree, brute-force baseline, Raylib, CMake và test tự động.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Vo-Minh-Tri1412/gravity-barnes-hut-simulation" target="_blank" rel="noopener">Xem repository <i class="fas fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-bowl-food"></i></div>
-                    <h3>Canteen Checkout System</h3>
-                    <p>Hệ thống checkout cho canteen: nhận diện món ăn, phát hiện vùng khay, tính giá, tích điểm, voucher, đánh giá và demo app bằng Python.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Vo-Minh-Tri1412/canteen-checkout-system" target="_blank" rel="noopener">Xem repository <i class="fas fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-road"></i></div>
-                    <h3>Smart Traffic Finance Optimizer</h3>
-                    <p>Nền tảng mô phỏng giao thông kết hợp điều khiển AI và tối ưu ngân sách đầu tư công, với SUMO/Godot, public-value scoring và các baseline.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Vo-Minh-Tri1412/smart-traffic-finance-optimizer" target="_blank" rel="noopener">Xem repository <i class="fas fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon"><i class="fas fa-masks-theater"></i></div>
-                    <h3>Werewolf Agent Sandbox</h3>
-                    <p>Sandbox local cho game suy luận xã hội nhiều agent, có persona YAML, provider registry, replay library, giao diện React và test TypeScript.</p>
-                    <div class="project-links">
-                        <a href="https://github.com/Vo-Minh-Tri1412/werewolf-agent-sandbox" target="_blank" rel="noopener">Xem repository <i class="fas fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-
-            </div>
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-top"><div><p class="section-kicker">02 / TOOLKIT</p><h2 id="skills-title">From <em>math to working code.</em></h2></div></div>
+        <div class="skills-grid">
+          <div class="skill-panel"><span class="skill-index">01</span><h3>Languages & engineering</h3><p>Python, C++20, TypeScript / JavaScript, Git, CMake, Docker, Godot / GDScript</p></div>
+          <div class="skill-panel"><span class="skill-index">02</span><h3>AI & data</h3><p>Computer vision, classification, YOLO pipelines, dataset auditing, ML fundamentals and model evaluation</p></div>
+          <div class="skill-panel"><span class="skill-index">03</span><h3>Systems & research interests</h3><p>LLM agents, simulation, algorithms, reinforcement learning fundamentals, constrained optimization and reproducible experiments</p></div>
         </div>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section bg-light">
-        <div class="container">
-            <h2 class="section-title">Liên <span>Hệ</span></h2>
-            <div class="contact-wrapper">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Địa chỉ</h4>
-                            <p>TP. Hồ Chí Minh, Việt Nam</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>Đang cập nhật...</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Điện thoại</h4>
-                            <p>Đang cập nhật...</p>
-                        </div>
-                    </div>
-                </div>
-
-                <form class="contact-form" onsubmit="event.preventDefault(); alert('Cảm ơn bạn! Tính năng này sẽ sớm hoạt động.');">
-                    <div class="form-group row">
-                        <input type="text" placeholder="Tên của bạn" required>
-                        <input type="email" placeholder="Email của bạn" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Tiêu đề" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea rows="5" placeholder="Nội dung lời nhắn..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Gửi Tin Nhắn <i class="fas fa-paper-plane"></i></button>
-                </form>
-            </div>
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="container about-layout">
+        <div><p class="section-kicker">03 / ABOUT ME</p><h2 id="about-title">Curious about the <em>why</em> behind the code.</h2></div>
+        <div class="about-copy">
+          <p>I'm a second-year Computer Science student at the <strong>University of Science, VNU-HCM (HCMUS)</strong> in Ho Chi Minh City, Vietnam. I enjoy moving between mathematical ideas, implementation details and hands-on experiments.</p>
+          <p>My interests span machine learning, computer vision, algorithms and AI-powered applications. I like projects with clear assumptions, visible limitations and results that other people can reproduce.</p>
+          <p>I'm looking for opportunities to learn from experienced engineers, contribute to real products and improve how I collaborate, test and ship software.</p>
+          <div class="about-link-row">
+            <a class="text-link" href="https://github.com/Vo-Minh-Tri1412/deep-ml" target="_blank" rel="noopener noreferrer">ML practice repository <span aria-hidden="true">↗</span></a>
+            <a class="text-link" href="https://github.com/Vo-Minh-Tri1412" target="_blank" rel="noopener noreferrer">GitHub profile <span aria-hidden="true">↗</span></a>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-container">
-            <p>&copy; 2026 Võ Minh Trí (Hyo). Mọi bản quyền được bảo lưu.</p>
-            <div class="social-links footer-socials">
-                <a href="https://github.com/Vo-Minh-Tri1412" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <div class="contact-card">
+          <div><p class="section-kicker">04 / LET'S CONNECT</p><h2 id="contact-title">Have a project or internship opportunity?</h2><p>I'm open to remote internships, collaborations and conversations about building useful software.</p></div>
+          <div class="contact-actions">
+            <a class="button button-primary" href="mailto:vmtriz234@gmail.com?subject=Hello%20Minh%20Tri">Email me <span aria-hidden="true">↗</span></a>
+            <a class="contact-email" href="mailto:vmtriz234@gmail.com">vmtriz234@gmail.com</a>
+          </div>
         </div>
-    </footer>
-
-    <!-- Custom Script -->
-    <script src="./assets/js/main.js"></script>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container footer-inner"><span>© <span id="year">2026</span> Võ Minh Trí · Built with care.</span><a href="https://github.com/Vo-Minh-Tri1412" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a><a class="back-top" href="#home">Back to top ↑</a></div>
+  </footer>
 </body>
 </html>
